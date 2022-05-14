@@ -353,3 +353,6 @@ function NewAlphabetCreate(array &$NewAlp, array $alp, $num)
 $strOnetoNine = '1234567890';
 $resultOnetoNine = array_sum(str_split($strOnetoNine, 2));
 echo $resultOnetoNine;
+
+
+?>
