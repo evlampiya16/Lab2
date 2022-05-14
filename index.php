@@ -147,3 +147,47 @@ function printStringReturnNumber()
 $my_num = printStringReturnNumber();
 echo "<\n>" . $my_num;
 
+
+//Task 16
+function increaseEnthusiasm($s = "null")
+{
+    return $s . "!";
+}
+echo "<\n>" . increaseEnthusiasm("The session is coming soon...");
+
+function repeatThreeTimes($s = "null")
+{
+    return $s . $s . $s;
+}
+
+echo "<\n>" . repeatThreeTimes("The session is coming soon...");
+
+echo "<\n>" . increaseEnthusiasm(repeatThreeTimes("Help me"));
+
+function cut($s = "null", $charsStart = 10)
+{
+    return substr($s, 0, $charsStart);
+}
+echo "<\n>" . cut(increaseEnthusiasm(repeatThreeTimes("Help me")), 5);
+
+function Array16($arr, $end, $now = 0)
+{
+    echo $arr[$now] . " ";
+    if ($now < $end) 
+        {Array16($arr, $end, ++$now);}
+    else
+        return;
+}
+
+function NumSum($num, $sum=0)
+{
+    while ($num > 0)
+    {
+        $sum+=$num%10;
+        $num/=10;
+    }
+    echo "$sum ";
+    if ($sum>9)
+        NumSum($sum);
+    else return;
+}
