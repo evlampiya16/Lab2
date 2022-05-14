@@ -308,3 +308,48 @@ for($i=0; $i<20; $i++)
     echo "$xLine<\n>";
 }
 
+
+//Task 20
+
+$Mas = array(10, 5, 423, 72, 31);
+function Arithmetic (array $arr , $num = 0, $sum = 0)
+{
+    if($num < count($arr) - 1)
+        Arithmetic($arr, $num+1, $sum+$arr[$num]);
+    if($num == count($arr) - 1)
+        echo ($sum+$arr[$num])/$num;
+}
+ArMean (Mas);
+
+function from1to100($num = 1, $sum = 1){
+    if($num < 100)
+        from1to100(num+1, $sum+$num);
+    if($num == 100)
+        echo $sum + $num;
+}
+from1to100();
+
+function masSqrt (array &$mass, $num = 0)
+{
+    if($num < count($mass))
+    {
+        $mass[$num] = sqrt($mass[$num]);
+        echo $mass[num] ." ";
+        masSqrt($mass, num+1);
+    }
+}
+
+$alphabet = array ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z');
+$NewAlphabet = array();
+function NewAlphabetCreate(array &$NewAlp, array $alp, $num)
+{
+    if($num<26)
+    {
+        $NewAlp["'alp[$num]'"] = $num + 1;
+        NewAlphabetCreate($NewAlp, $alp, num+1);
+    }
+}
+
+$strOnetoNine = '1234567890';
+$resultOnetoNine = array_sum(str_split($strOnetoNine, 2));
+echo $resultOnetoNine;
