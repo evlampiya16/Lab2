@@ -51,3 +51,9 @@ $answer -= 2;
 $answer /= 2;
 $answer -= $my_num;
 echo $answer;
+
+//Task 14
+
+$a = 10;
+$b = 3;
+echo "<\n>" . ($a%$b);
