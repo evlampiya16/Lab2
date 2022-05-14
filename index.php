@@ -117,3 +117,22 @@ foreach ($arr5 as &$item)
     if($item < 0)
         $item = abs($item);
 }
+////////////////////////////////////////////////////////////
+$randomN = rand(1,100);
+echo "<\n>Число: $randomN<\n>";
+$div = array();
+for($i = 1;$i <= $randomN;$i++)
+{
+    if($randomN % $i == 0)
+    {
+        array_push($div, $i);
+        echo $i . " ";
+    }
+}
+$OneToTen = array(1,2,3,4,5,6,7,8,9,10);
+$counter = 0;
+$sum = 0;
+while ($sum < 10){
+    $sum += $OneToTen[$counter];
+    $counter ++;
+}
