@@ -60,7 +60,7 @@ echo "<\n>" . ($a%$b);
 
 if ($a%$b==0)
     echo "<\n>Делится! Результат: <\n>" . ($a/$b);
-else echo "<\n>Делится с остатком<\n>" . ($a%$b);
+else echo "<\n>Делится с остатком. Остаток: <\n>" . ($a%$b);
 
 echo $st = pow(2,10) . "<\n>";
 echo sqrt(245) . "<\n>";
@@ -76,3 +76,25 @@ echo round(sqrt(379),2) . "<\n>";
 $arr2 = array(
     "floor" => floor(sqrt(587)),
     "ceil" => ceil(sqrt(587)));
+
+$arr3=array(
+    4,-2,5,10,-130,0,10);
+$minN=$arr3[0];
+$maxN=$arr3[0];
+foreach($arr3 as $n)
+    echo"$num ";
+if ($minN > $n)
+    $minN = $n;
+if ($maxN < $n)
+    $maxN = $n;
+echo "<\n>maximum - $maxN , minimum - $minN";
+
+echo "<\n>" . rand(1,100) . "<\n>";
+$arr4 = array();
+for($i = 0; $i<10; $i++) 
+{
+    array_push($arr4, rand(1, 100));
+}
+for($i = 0; $i<10; $i++) {
+    echo "$arr4[$i] ";
+}
