@@ -261,3 +261,40 @@ echo $date["'day'"] . ":";
 $TaskArray = array('a','b','c','d','e');
 echo"<\n>" . count($TaskArray);
 echo"<\n>" . $TaskArray[count($TaskArray)-1] . " " . $TaskArray[count($TaskArray)-2];
+
+
+//Task 18
+function f1($v1, $v2)
+{
+    $sum = $v1 + $v2;
+    if ($sum>10)
+        return true;
+    else return false;
+}
+
+function f2($var1, $var2){
+    if ($var1 == $var2)
+        return true;
+    else return false;
+}
+
+function f3 ($var1)
+{
+    if($var1 < 10 || $var1 > 99)
+        echo "Выход из диапазона!";
+    else{
+        $Sum = $var1 %10 + (($var1 - $var1 %10)/10);
+        if($Sum<10)
+            echo "Сумма цифр однозначна!";
+        else
+            echo "Сумма цифр двузначна!";
+    }
+}
+
+$arr18 = array(1, 2, 3, 5);
+if(count($arr18)==3)
+    echo array_sum($arrT18) ."<\n>";
+else
+    echo "<\n>";
+
+
