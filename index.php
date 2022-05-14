@@ -61,3 +61,11 @@ echo "<\n>" . ($a%$b);
 if ($a%$b==0)
     echo "<\n>Делится! Результат: <\n>" . ($a/$b);
 else echo "<\n>Делится с остатком<\n>" . ($a%$b);
+
+echo $st = pow(2,10) . "<\n>";
+echo sqrt(245) . "<\n>";
+$arr = array(4,2,5,19,13,0,10);
+$sum = 0;
+foreach($arr as $i)
+    $sum += $i**2;
+echo sqrt($sum) . "<\n>";
