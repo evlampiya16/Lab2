@@ -298,3 +298,13 @@ else
     echo "<\n>";
 
 
+// Task 19
+
+$xLine="";
+echo "<\n>";
+for($i=0; $i<20; $i++)
+{
+    $xLine .= "x";
+    echo "$xLine<\n>";
+}
+
