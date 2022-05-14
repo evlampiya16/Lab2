@@ -136,3 +136,14 @@ while ($sum < 10){
     $sum += $OneToTen[$counter];
     $counter ++;
 }
+
+
+//Task 15
+function printStringReturnNumber()
+{
+    echo "<\n>Я люблю WEB!<\n>";
+    return 101;
+}
+$my_num = printStringReturnNumber();
+echo "<\n>" . $my_num;
+
